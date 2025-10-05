@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<title>websiite</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	</head>
+	<body >
+		<nav class='navbar navbar-expand-lg text-dark' style='background:#ff9966;'>
+			<h1 class='navbar-brand'style='font-size:40px; color:white'>INFORMATION</h1>
+			<ul class='navbar-nav ml-auto'>
+				<li class='nav-item actives'><a class='nav-link text-light'href='/index'>Home</a></li>
+				<li class='nav-item'><a class='nav-link text-light' href='/register'>Register</a></li>
+				<li class='nav-item'><a class='nav-link text-light' href='/login'>Login</a></li>
+				<li class='nav-item'><a class='nav-link text-light' href='/views'>View</a></li>
+			</ul>
+		</nav>
+		<div class='container mt-5' >
+			<div class='row'>
+				<div class='col-md-6 mx-auto'>
+					<div class='card' style='background:transparent;' >
+						<div class='card-body' >
+							<h1 align='center' style='color:black; letter-spacing:3px;'>USER LOGIN</h1>
+							<hr>`
+							<form method='POST' action="" >
+								<div class='form-group'>
+									<label>Email id</label>
+									<input type='text'  class='form-control' name='email' required placeholder='Enter your name'>
+								</div>
+								<div class='form-group'>
+									<label>Password</label>
+									<input type='password'  class='form-control' name='pass' required placeholder='Enter your password'>
+								</div>
+								<input type='submit' name='submit' value='Login' class='btn text-light' style='margin-left:45%;background:#ff9966;'>
+							</form>
+							<p>Did you register? <a href='/register'>Register</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>

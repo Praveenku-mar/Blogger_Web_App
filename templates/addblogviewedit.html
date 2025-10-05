@@ -1,0 +1,73 @@
+<html>
+	<head>
+		<title>websiite</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	</head>
+	<body>
+		<nav class='navbar navbar-expand-lg text-dark' style='background:#ff9966;'>
+			<h1 class='navbar-brand'style='font-size:40px; color:white'>INFORMATION</h1>
+			<ul class='navbar-nav ml-auto'>
+				<li class='nav-item actives'><a class='nav-link text-light'href='/loginindex'>Home</a></li>
+				<li class='nav-item actives'><a class='nav-link text-light'href='/addblog'>Add Blog</a></li>
+				<li class='nav-item'><a class='nav-link text-light' href='/logout1'>Logout</a></li>
+			</ul>
+		</nav>
+		<div class='container-fluid mt-5'>
+			<div class='row'>
+				<div class='col-md-2' style='font-size:15px;'>
+					<div class='card'style='background:#ff9966;box-shadow:2px 2px 7px 5px #758694'>
+						<div class='card-body'>
+							<a class='nav-link text-light' href='/addblog'>
+								<i class="fa fa-home" aria-hidden="true"></i>  Home		
+							</a>
+							<a class='nav-link text-light' href='/addblogform'>
+								<i class="fa fa-plus-circle" aria-hidden="true"></i>  Add Blog
+							</a>
+							<a class='nav-link text-light' href='/addblogview'>
+								<i class="fa fa-database" aria-hidden="true"></i>   View Blog
+							</a>
+							<a class='nav-link text-light' href='/updateprofile'>
+								<i class="fa fa-pencil-square" aria-hidden="true"></i>   Update profile
+							</a>
+							<a class='nav-link text-light' href='/uploadimg'>
+								<i class="fa fa-upload" aria-hidden="true"></i>   Upload image
+							</a>
+							<a class='nav-link text-light' href='/changepass'>
+								<i class="fa fa-exchange" aria-hidden="true"></i>   Change password
+							</a>
+							<a class='nav-link text-light' href='/logout1'>
+								<i class="fa fa-sign-out" aria-hidden="true"></i>   Logout
+							</a>
+						</div>
+					</div>
+				</div>
+					<div class='col-md-6 mx-auto'>
+						<div class='card'>
+							<div class='card-body'>
+								<h1 align='center' style='color:black;letter-spacing:3px;'>ADD BLOG</h1>
+								<hr>
+								<form method='POST' action="" enctype='multipart/form-data'>
+									<div class='form-group'>
+										<label>Blog Title</label>
+										<input type='text' name='blogtit' class='form-control' value={{datas.bname}}>
+									</div>
+									<div class='form-group'>
+										<label>Blog image</label>
+										<input type='file' name='blogimg' class='form-control' value={{datas.bimg}} >
+									</div>
+									<div class='form-group'>
+										<label>Blog description</label>
+										<textarea class='form-control' name='desp' value={{datas.desp}} ></textarea>
+									</div>
+									<center>
+										<input type='submit' name='submit' value='Upload Blog' style='background:#ff9966' class=' btn text-light'>
+									</center>
+								</form>
+							</div>
+						</div>
+					</div>
+			</div>
+		</div>
+	</body>
+</html>
